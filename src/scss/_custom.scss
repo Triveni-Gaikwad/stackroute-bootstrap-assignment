@@ -1,0 +1,43 @@
+.navbar {
+    background: $nav-bg;
+
+    @include media-breakpoint-down(sm) {
+        .navbar-brand {
+            flex-basis: 55%;
+            text-align: center;
+        }
+    }
+}
+
+.icon-nav {
+    font-size: $font-size-base*1.2;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(sm) { 
+        font-size: $font-size-base*1.5;
+        order: 1;
+    }
+
+    .dropdown {
+        padding-left: $spacer*0.5;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+
+            &.dropdown-toggle::after {
+                border-width: 0;
+            }
+        }
+
+        &:first-child {
+            border-right: 1px solid #dcd729;
+        }
+    }
+}
+
+.navbar-toggler {
+    padding: 0; 
+    border: 0;
+}
