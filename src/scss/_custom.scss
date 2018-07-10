@@ -41,3 +41,88 @@
     padding: 0; 
     border: 0;
 }
+
+.product-list {
+    .card {
+        margin-bottom: $spacer;
+        .card-body {
+            padding: $spacer/2;
+            position: relative;
+        
+            .fav-icon {
+                position: absolute;
+                right: $spacer;
+                top: $spacer/2;
+                cursor: pointer;
+            }
+        
+            .card-title {
+                margin-bottom: 0;
+                font-weight: normal;
+                font-size: $font-size-base;
+            }
+            .card-text {
+                span:first-child {
+                    font-weight: bold;
+                    color: $success;
+        
+                    i {
+                        font-size: $font-size-base;
+                    }
+                }
+                span:last-child {
+                    padding-left: $spacer/2;
+                    text-decoration: line-through;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+.check-list {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+
+        span {
+            color: $pink;
+            font-size: $font-size-base/1.2;
+        }
+    }
+}
+
+.color-list {
+    .color-block {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background: #ccc;
+    }
+}
+
+footer {
+    background: $gray-800;
+    color: #fff;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: $cyan;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-left: $spacer/3;
+
+    &:hover {
+        background: $primary;
+    }
+}

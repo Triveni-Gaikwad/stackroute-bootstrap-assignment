@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Triveni-Gaikwad/stackroute-bootstrap-assignment#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
   },

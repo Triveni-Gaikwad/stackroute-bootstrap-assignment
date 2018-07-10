@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tanmayee Fashions</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +23,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-primary" id="shoppingCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-shopping-cart"></i>
+                        <span class="sr-only">Shopping Cart Dropdown</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="shoppingCart">
                         <div class="px-4 py-3">
@@ -34,10 +33,11 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-primary" id="shoppingCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-toggle text-primary" id="userSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user"></i>
+                        <span class="sr-only">User Settings Dropdown</span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="shoppingCart">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Order History</a>
                         <a class="dropdown-item" href="#">Track Order</a>
@@ -97,9 +97,778 @@
             </div>
         </nav>
     </header>
+    <div class="text-center mb-3">
+        <img src="images/banner.jpg" class="img-fluid" alt="Offers Banner" />
+    </div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <form class="mb-3">
+                    <div class="card">
+                        <h5 class="card-header">Filters</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Categories</h5>
+                            <ul class="check-list mb-3">
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category1">
+                                        <label class="custom-control-label" for="category1">Tops
+                                            <span>(112)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category2">
+                                        <label class="custom-control-label" for="category2">Dresses
+                                            <span>(200)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category3">
+                                        <label class="custom-control-label" for="category3">Tshirts
+                                            <span>(20)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category4">
+                                        <label class="custom-control-label" for="category4">Jeans
+                                            <span>(50)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category5">
+                                        <label class="custom-control-label" for="category5">Shirts
+                                            <span>(234)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category6">
+                                        <label class="custom-control-label" for="category6">Skirts
+                                            <span>(12)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category7">
+                                        <label class="custom-control-label" for="category7">Sweaters
+                                            <span>(199)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="category8">
+                                        <label class="custom-control-label" for="category8">Track pants
+                                            <span>(65)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h5 class="card-title">Price</h5>
+                            <ul class="check-list mb-3">
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="price1">
+                                        <label class="custom-control-label" for="price1">
+                                            &lt;
+                                            <i class="fa fa-rupee"></i>500
+                                            <span>(10)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="price2">
+                                        <label class="custom-control-label" for="price2">
+                                            <i class="fa fa-rupee"></i>500 -
+                                            <i class="fa fa-rupee"></i>999
+                                            <span>(25)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="price3">
+                                        <label class="custom-control-label" for="price3">
+                                            <i class="fa fa-rupee"></i>1000 -
+                                            <i class="fa fa-rupee"></i>1499
+                                            <span>(100)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="price4">
+                                        <label class="custom-control-label" for="price4">
+                                            <i class="fa fa-rupee"></i>1500 -
+                                            <i class="fa fa-rupee"></i>1999
+                                            <span>(230)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="price5">
+                                        <label class="custom-control-label" for="price5">
+                                            &gt;
+                                            <i class="fa fa-rupee"></i>2000
+                                            <span>(112)</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h5 class="card-title">Size</h5>
+                            <ul class="check-list mb-3">
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size1">
+                                        <label class="custom-control-label" for="size1">
+                                            28
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size2">
+                                        <label class="custom-control-label" for="size2">
+                                            30
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size3">
+                                        <label class="custom-control-label" for="size3">
+                                            32
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size4">
+                                        <label class="custom-control-label" for="size4">
+                                            34
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size5">
+                                        <label class="custom-control-label" for="size5">
+                                            36
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size6">
+                                        <label class="custom-control-label" for="size6">
+                                            38
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size7">
+                                        <label class="custom-control-label" for="size7">
+                                            40
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size8">
+                                        <label class="custom-control-label" for="size8">
+                                            XL
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size9">
+                                        <label class="custom-control-label" for="size9">
+                                            XXL
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="size10">
+                                        <label class="custom-control-label" for="size10">
+                                            XXXL
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h5 class="card-title">Color</h5>
+                            <ul class="check-list color-list mb-3">
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color1">
+                                        <label class="custom-control-label" for="color1">
+                                            <span class="color-block" style="background: red"></span> Red
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color2">
+                                        <label class="custom-control-label" for="color2">
+                                            <span class="color-block" style="background: gray"></span> Gray
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color3">
+                                        <label class="custom-control-label" for="color3">
+                                            <span class="color-block" style="background: black"></span> Black
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color4">
+                                        <label class="custom-control-label" for="color4">
+                                            <span class="color-block" style="background: green"></span> Green
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color5">
+                                        <label class="custom-control-label" for="color5">
+                                            <span class="color-block" style="background: pink"></span> Pink
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color6">
+                                        <label class="custom-control-label" for="color6">
+                                            <span class="color-block" style="background: blue"></span> Blue
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color7">
+                                        <label class="custom-control-label" for="color7">
+                                            <span class="color-block" style="background: purple"></span> Purple
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color8">
+                                        <label class="custom-control-label" for="color8">
+                                            <span class="color-block" style="background: yellow"></span> Yellow
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="color9">
+                                        <label class="custom-control-label" for="color9">
+                                            <span class="color-block" style="background: orange"></span> Orange
+                                        </label>
+                                        s </div>
+                                </li>
+                            </ul>
+                            <h5 class="card-title">Discount</h5>
+                            <ul class="check-list mb-3">
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount1" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount1">80% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount2" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount2">70% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount3" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount3">60% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount4" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount4">50% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount5" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount5">40% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount6" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount6">30% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount7" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount7">20% and above</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="discount8" name="discount" class="custom-control-input">
+                                        <label class="custom-control-label" for="discount8">10% and above</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-9">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Women</li>
+                    </ol>
+                </nav>
+                <div class="row product-list">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/1.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/2.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/3.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/4.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/5.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/6.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/7.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/8.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/9.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/10.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/11.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/12.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/13.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/14.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/15.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/16.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/17.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/18.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/19.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="images/products/20.jpg" alt="Product Image">
+                            <div class="card-body">
+                                <div class="text-info fav-icon" data-toggle="tooltip" data-placement="left" title="Add to Faviorates">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h5 class="card-title">Product Name</h5>
+                                <div class="card-text mb-1">
+                                    <span>
+                                        <i class="fa fa-rupee"></i>1299</span>
+                                    <span>1499</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination mt-3 justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">6</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row text-center">
+            <div class="col-sm-6 text-sm-left">
+                &copy; 2018 Tanmayee Fashions. All rights reserved.
+            </div>
+            <div class="col-sm-6 text-sm-right social-icons">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                    <span class="sr-only">Tanmayee Fashions Facebook</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-google"></i>
+                    <span class="sr-only">Tanmayee Fashions Google</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                    <span class="sr-only">Tanmayee Fashions Twitter</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                    <span class="sr-only">Tanmayee Fashions Instagram</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-pinterest"></i>
+                    <span class="sr-only">Tanmayee Fashions Pinterest</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-youtube"></i>
+                    <span class="sr-only">Tanmayee Fashions Youtube</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-whatsapp"></i>
+                    <span class="sr-only">Tanmayee Fashions Whatsapp</span>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
