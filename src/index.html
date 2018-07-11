@@ -11,7 +11,7 @@
 
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,17 +20,11 @@
                 <img src="images/logo.png" class="img-fluid" alt="Tanmayee Fashions Logo" />
             </a>
             <ul class="icon-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-primary" id="shoppingCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li>
+                    <a href="cart.html" class="text-primary">
                         <i class="fa fa-shopping-cart"></i>
-                        <span class="sr-only">Shopping Cart Dropdown</span>
+                        <span class="sr-only">Shopping Cart</span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="shoppingCart">
-                        <div class="px-4 py-3">
-                            <p>Your Shopping Bag is empty.</p>
-                            <a href="#" class="btn btn-primary">Continue Shopping</a>
-                        </div>
-                    </div>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-primary" id="userSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -100,9 +94,9 @@
     <div class="text-center mb-3">
         <img src="images/banner.jpg" class="img-fluid" alt="Offers Banner" />
     </div>
-    <main class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3">
+            <aside class="col-sm-3 d-none d-sm-block">
                 <form class="mb-3">
                     <div class="card">
                         <h5 class="card-header">Filters</h5>
@@ -439,8 +433,8 @@
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="col-sm-9">
+            </aside>
+            <main class="col-sm-9">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -825,9 +819,9 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </main>
         </div>
-    </main>
+    </div>
     <footer class="container-fluid">
         <div class="row text-center">
             <div class="col-sm-6 text-sm-left">

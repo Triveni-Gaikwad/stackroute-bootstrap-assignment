@@ -8616,7 +8616,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: #f1eb1f; }
   @media (max-width: 767.98px) {
     .navbar .navbar-brand {
-      flex-basis: 55%;
+      flex-basis: 58%;
       text-align: center; } }
 
 .icon-nav {
@@ -8627,14 +8627,19 @@ a.text-dark:hover, a.text-dark:focus {
     .icon-nav {
       font-size: 1.5rem;
       order: 1; } }
-  .icon-nav .dropdown {
-    padding-left: 0.5rem;
-    display: inline-block; }
-    .icon-nav .dropdown a {
+  .icon-nav li {
+    padding-left: 0.7rem;
+    padding-right: 0.5rem;
+    display: inline; }
+    @media (max-width: 767.98px) {
+      .icon-nav li {
+        padding-left: 0.5rem;
+        padding-right: 0.3rem; } }
+    .icon-nav li a {
       text-decoration: none; }
-      .icon-nav .dropdown a.dropdown-toggle::after {
+      .icon-nav li a.dropdown-toggle::after {
         border-width: 0; }
-    .icon-nav .dropdown:first-child {
+    .icon-nav li:first-child {
       border-right: 1px solid #dcd729; }
 
 .navbar-toggler {
@@ -8648,7 +8653,7 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative; }
     .product-list .card .card-body .fav-icon {
       position: absolute;
-      right: 1rem;
+      right: 0.5rem;
       top: 0.5rem;
       cursor: pointer; }
     .product-list .card .card-body .card-title {
@@ -8697,6 +8702,24 @@ footer {
   text-align: center;
   vertical-align: middle;
   border-radius: 2px;
-  margin-left: 0.33333rem; }
+  margin-left: 0.33333rem;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -ms-transition: background 0.5s; }
   .social-icons a:hover {
     background: #D81282; }
+
+.cart-list {
+  margin: 0;
+  padding: 0 0.5rem 0 0.5rem; }
+  .cart-list li {
+    border: 1px solid #dee2e6;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  .cart-list .strike-through {
+    text-decoration: line-through; }
+  .cart-list select {
+    width: auto;
+    display: inline-block; }

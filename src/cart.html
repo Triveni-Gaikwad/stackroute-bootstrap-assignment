@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tanmayee Fashions</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="img-fluid" alt="Tanmayee Fashions Logo" />
+            </a>
+            <ul class="icon-nav">
+                <li>
+                    <a href="cart.html" class="text-primary">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="sr-only">Shopping Cart</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle text-primary" id="userSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                        <span class="sr-only">User Settings Dropdown</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Order History</a>
+                        <a class="dropdown-item" href="#">Track Order</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Men
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menDrop">
+                            <a class="dropdown-item" href="#">T-Shirts</a>
+                            <a class="dropdown-item" href="#">Casual Shirts</a>
+                            <a class="dropdown-item" href="#">Formal Shirts</a>
+                            <a class="dropdown-item" href="#">Sweaters & Sweatshirts</a>
+                            <a class="dropdown-item" href="#">Jeans</a>
+                            <a class="dropdown-item" href="#">Casual Trousers</a>
+                            <a class="dropdown-item" href="#">Formal Trousers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="womenDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Women
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="womenDrop">
+                            <a class="dropdown-item" href="#">Tunics & Tops</a>
+                            <a class="dropdown-item" href="#">Kurtas & Suits</a>
+                            <a class="dropdown-item" href="#">Etdnic Dresses</a>
+                            <a class="dropdown-item" href="#">Salwars, Churidars</a>
+                            <a class="dropdown-item" href="#">Skirts & Palazzos</a>
+                            <a class="dropdown-item" href="#">Sarees & Blouses</a>
+                            <a class="dropdown-item" href="#">Dress Material</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kidsDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kids
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kidsDrop">
+                            <a class="dropdown-item" href="#">Boys Clotding</a>
+                            <a class="dropdown-item" href="#">Girls Clotding</a>
+                            <a class="dropdown-item" href="#">Kids Accessories</a>
+                            <a class="dropdown-item" href="#">Top</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flash Sale</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row mb-3">
+            <div class="col-sm-8">
+                <ul class="cart-list">
+                    <li class="row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="images/products/1.jpg" alt="product image" class="img-fluid" />
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-10">
+                            <h6 class="mb-1">Product Name</h6>
+                            <div class="mb-1">
+                                <strong class="text-success">
+                                    <i class="fa fa-rupee"></i>1299</strong>
+                                <span class="strike-through">1499</span>
+                            </div>
+                            <div class="mb-2">
+                                <label class="sr-only" for="size1">Size</label>
+                                <select class="form-control form-control-sm" id="size1">
+                                    <option selected>Size</option>
+                                    <option value="1">32</option>
+                                    <option value="2">34</option>
+                                    <option value="3">36</option>
+                                    <option value="4">XL</option>
+                                    <option value="5">XXL</option>
+                                </select>
+
+                                <label class="sr-only" for="quantity1">Quantity</label>
+                                <select class="form-control form-control-sm" id="quantity1">
+                                    <option selected>Quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="images/products/2.jpg" alt="product image" class="img-fluid" />
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-10">
+                            <h6 class="mb-1">Product Name</h6>
+                            <div class="mb-1">
+                                <strong class="text-success">
+                                    <i class="fa fa-rupee"></i>1299</strong>
+                                <span class="strike-through">1499</span>
+                            </div>
+                            <div class="mb-2">
+                                <label class="sr-only" for="size2">Size</label>
+                                <select class="form-control form-control-sm" id="size2">
+                                    <option selected>Size</option>
+                                    <option value="1">32</option>
+                                    <option value="2">34</option>
+                                    <option value="3">36</option>
+                                    <option value="4">XL</option>
+                                    <option value="5">XXL</option>
+                                </select>
+
+                                <label class="sr-only" for="quantity2">Quantity</label>
+                                <select class="form-control form-control-sm" id="quantity2">
+                                    <option selected>Quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="images/products/3.jpg" alt="product image" class="img-fluid" />
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-10">
+                            <h6 class="mb-1">Product Name</h6>
+                            <div class="mb-1">
+                                <strong class="text-success">
+                                    <i class="fa fa-rupee"></i>1299</strong>
+                                <span class="strike-through">1499</span>
+                            </div>
+                            <div class="mb-2">
+                                <label class="sr-only" for="size3">Size</label>
+                                <select class="form-control form-control-sm" id="size3">
+                                    <option selected>Size</option>
+                                    <option value="1">32</option>
+                                    <option value="2">34</option>
+                                    <option value="3">36</option>
+                                    <option value="4">XL</option>
+                                    <option value="5">XXL</option>
+                                </select>
+
+                                <label class="sr-only" for="quantity3">Quantity</label>
+                                <select class="form-control form-control-sm" id="quantity3">
+                                    <option selected>Quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="images/products/4.jpg" alt="product image" class="img-fluid" />
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-10">
+                            <h6 class="mb-1">Product Name</h6>
+                            <div class="mb-1">
+                                <strong class="text-success">
+                                    <i class="fa fa-rupee"></i>1299</strong>
+                                <span class="strike-through">1499</span>
+                            </div>
+                            <div class="mb-2">
+                                <label class="sr-only" for="size4">Size</label>
+                                <select class="form-control form-control-sm" id="size4">
+                                    <option selected>Size</option>
+                                    <option value="1">32</option>
+                                    <option value="2">34</option>
+                                    <option value="3">36</option>
+                                    <option value="4">XL</option>
+                                    <option value="5">XXL</option>
+                                </select>
+
+                                <label class="sr-only" for="quantity4">Quantity</label>
+                                <select class="form-control form-control-sm" id="quantity4">
+                                    <option selected>Quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 mt-3 col-lg-3 offset-lg-1">
+                <div class="card border-secondary mb-3">
+                    <div class="card-header bg-secondary text-white">What Next?</div>
+                    <div class="card-body">
+                        <p>
+                            Have Coupons??
+                            <a href="#">Apply here.</a>
+                        </p>
+                        <p class="border-top border-secondary pt-3">
+                            Need Gift Card??
+                            <a href="#">Click here.</a>
+                        </p>
+                        <h5 class="border-top border-secondary pt-3">Price details</h5>
+                        <table class="table table-sm table-borderless mb-2">
+                            <tr>
+                                <td>Bag Total</td>
+                                <td class="text-right">
+                                    <i class="fa fa-rupee"></i>8000</td>
+                            </tr>
+                            <tr>
+                                <td>Bag Discount</td>
+                                <td class="text-right">
+                                    <i class="fa fa-rupee"></i>2879</td>
+                            </tr>
+                            <tr>
+                                <td>Estimated Tax</td>
+                                <td class="text-right">
+                                    <i class="fa fa-rupee"></i>300</td>
+                            </tr>
+                            <tr>
+                                <td>Coupon Discount</td>
+                                <td class="text-right">
+                                    <i class="fa fa-rupee"></i>0</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Charges</td>
+                                <td class="text-right">
+                                    <i class="fa fa-rupee"></i>150</td>
+                            </tr>
+                            <tr class="border-top border-secondary">
+                                <td>
+                                    <h5>Order Total</h5>
+                                </td>
+                                <td class="text-right">
+                                    <i class="fa fa-rupee"></i>5571</td>
+                            </tr>
+                        </table>
+                        <button class="btn btn-success btn-block">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row text-center">
+            <div class="col-sm-6 text-sm-left">
+                &copy; 2018 Tanmayee Fashions. All rights reserved.
+            </div>
+            <div class="col-sm-6 text-sm-right social-icons">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                    <span class="sr-only">Tanmayee Fashions Facebook</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-google"></i>
+                    <span class="sr-only">Tanmayee Fashions Google</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                    <span class="sr-only">Tanmayee Fashions Twitter</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                    <span class="sr-only">Tanmayee Fashions Instagram</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-pinterest"></i>
+                    <span class="sr-only">Tanmayee Fashions Pinterest</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-youtube"></i>
+                    <span class="sr-only">Tanmayee Fashions Youtube</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-whatsapp"></i>
+                    <span class="sr-only">Tanmayee Fashions Whatsapp</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
